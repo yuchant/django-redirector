@@ -1,7 +1,6 @@
 django-redirector
 =================
-
-Django Redirector adds simple admin powered 301 redirects.
+Built for use on grovemade.com, Django Redirector adds simple admin powered 301 redirects.
 
 
 Example rules:  
@@ -12,7 +11,7 @@ Example rules:
 **Path:** `/products/`  
 **Type:** `startswith`  
 
-Uses caching heavily since the middleware is called on every request.
+Uses caching heavily because the middleware is called on every request.
 
 1. redirect rules are cached once
 2. redirect results are cached per request path
