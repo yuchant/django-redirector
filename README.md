@@ -13,8 +13,8 @@ Type: Startswith
 
 Uses caching heavily since the middleware is called on every request.
 
-1: redirect rules are cached once
-2: redirect results are cached per request path
+1 - redirect rules are cached once
+2 - redirect results are cached per request path
 
 Cache is invalidated when a new rule is saved/added.
 
@@ -32,6 +32,6 @@ Syncdb, then navigate to your admin panel!
 
 Settings
 --------
-``REDIRECT_CACHE_TIME``: _default: 60*30_
+``REDIRECT_CACHE_TIME``: _default: 60*30_  
 Seconds to cache individual page redirect results. 
 
