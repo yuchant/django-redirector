@@ -50,7 +50,6 @@ class RedirectManager(models.Manager):
         """
         cache_key = '-'.join([generate_cache_prefix(), path])
         redirect_url = cache.get(cache_key)
-        print 'cache key ', cache_key, ' returned ', redirect_url
 
         if redirect_url:
             return redirect_url
