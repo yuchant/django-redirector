@@ -5,11 +5,11 @@ Django Redirector adds simple admin powered 301 redirects.
 
 
 Example rules:
-Path: /foo/bar/
-Type: Exact (case insensitive) 
+*Path:* `/foo/bar/`  
+*Type:* `exact (case insensitive)`  
 
-Path: /products/
-Type: Startswith
+*Path:* `/products/`  
+*Type:* `startswith`  
 
 Uses caching heavily since the middleware is called on every request.
 
