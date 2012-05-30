@@ -13,8 +13,8 @@ Type: Startswith
 
 Uses caching heavily since the middleware is called on every request.
 
-1 - redirect rules are cached once
-2 - redirect results are cached per request path
+1. redirect rules are cached once
+2. redirect results are cached per request path
 
 Cache is invalidated when a new rule is saved/added.
 
