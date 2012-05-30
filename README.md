@@ -1,7 +1,22 @@
 django-redirector
 =================
 
-Django Redirector adds admin powered 301 redirects.
+Django Redirector adds simple admin powered 301 redirects.
+
+
+Example rules:
+Path: /foo/bar/
+Type: Exact (case insensitive) 
+
+Path: /products/
+Type: Startswith
+
+Uses caching heavily since the middleware is called on every request.
+
+1: redirect rules are cached once
+2: redirect results are cached per request path
+
+Cache is invalidated when a new rule is saved/added.
 
 
 Installation
@@ -17,9 +32,6 @@ Syncdb, then navigate to your admin panel!
 
 Settings
 --------
-``REDIRECT_CACHE_TIME``: _default: 60*10_
+``REDIRECT_CACHE_TIME``: _default: 60*30_
 Seconds to cache individual page redirect results. 
-
-Note that caches are invalidated automatically when a Redirect is saved or deleted.
-
 

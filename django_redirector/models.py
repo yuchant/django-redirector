@@ -15,7 +15,7 @@ from django.conf import settings
 from django.core.cache import cache
 
 
-REDIRECT_CACHE_TIME = getattr(settings, 'REDIRECT_CACHE_TIME', 60*10)
+REDIRECT_CACHE_TIME = getattr(settings, 'REDIRECT_CACHE_TIME', 60*30)
 
 CACHE_PREFIX = 'REDIRECT'
 CACHE_GENERATION_KEY = '-'.join([CACHE_PREFIX, 'GENERATION'])
