@@ -4,7 +4,7 @@ from django_redirector.models import Redirect, RedirectGroup
 
 
 class RedirectAdmin(admin.ModelAdmin):
-    list_display = ('group', 'match_path', 'match_type')
+    list_display = ('is_active', 'group', 'match_path', 'match_type')
     list_display_links = list_display
     list_filter = ('group',)
     actions = [
